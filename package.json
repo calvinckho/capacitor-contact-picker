@@ -1,6 +1,6 @@
 {
     "name": "@calvinckho/capacitor-contact-picker",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Allows users to select a single contact from their device.",
     "main": "dist/esm/index.js",
     "types": "dist/esm/index.d.ts",
