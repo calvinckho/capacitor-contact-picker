@@ -28,6 +28,7 @@
     "dist/",
     "ios/",
     "android/",
+    "Package.swift",
     "CalvinckhoCapacitorContactPicker.podspec"
   ],
   "keywords": [

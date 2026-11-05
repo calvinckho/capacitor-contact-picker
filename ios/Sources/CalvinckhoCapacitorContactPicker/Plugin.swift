@@ -7,7 +7,14 @@ import ContactsUI
  * here: https://capacitor.ionicframework.com/docs/plugins/ios
  */
 @objc(ContactPicker)
-public class ContactPicker: CAPPlugin, CNContactPickerDelegate {
+public class ContactPicker: CAPPlugin, CAPBridgedPlugin, CNContactPickerDelegate {
+
+    public let identifier = "ContactPicker"
+    public let jsName = "ContactPicker"
+    public let pluginMethods: [CAPPluginMethod] = [
+        CAPPluginMethod(name: "open", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "close", returnType: CAPPluginReturnPromise)
+    ]
 
     var vc: CNContactPickerViewController?
     var id: String?
