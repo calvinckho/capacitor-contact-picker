@@ -3,10 +3,7 @@ import { ContactPickerPlugin } from './definitions';
 
 export class ContactPickerWeb extends WebPlugin implements ContactPickerPlugin {
     constructor() {
-        super({
-            name: 'ContactPicker',
-            platforms: ['web']
-        });
+        super();
     }
 
     async close() {
